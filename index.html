@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Decodificador de Texto</title>
+	<link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+	<header class="header">
+		<img src="./assets/img/alura-logo.svg" alt="logo Alura">
+	</header>
+	<main class="decodificador">
+		<section class="decodificador__entrada">
+			<textarea class="decodificador__entrada__textarea" name="texto_usuario" id="texto_usuario" placeholder="digite seu texto"></textarea>
+			<div class="decodificador__entrada__grupo_inferior">
+				<div class="decodificador__entrada__dica">
+					<img class="decodificador__dica__icone" src="./assets/img/exclamacao.svg" alt="ícone de círculo com uma exclamação">
+					<p class="decodificador__dica__texto">Apenas letras minúsculas e sem acento.</p>
+				</div>
+				<div class="decodificador__entrada__botoes">
+					<button type="button" class="btn" id="entrada__botao_encriptar">Criptografar</button>
+					<button type="button" class="btn" id="entrada__botao_desencriptar">Descriptografar</button>
+				</div>
+			</div>
+		</section>
+		<section class="decodificador__saida">
+			<img class="decodificador__saida__img" id="saida_img" src="./assets/img/ilustra.svg" alt="ilustração de uma pessoa observando um diamante através de uma lupa">
+
+			<div class="decodificador__saida__texto">
+				<div id="saida_texto_temporario">
+					<h3 class="decodificador__saida__titulo_destaque">Nenhuma mensagem encontrada</h3>
+					<p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+				</div>
+				<p id="saida_texto_usuario"></p>
+				<button type="button" id="saida__botao_copiar" class="btn display_none">Copiar</button>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<p class="footer__creditos">Desenvolvido por Raquel Roessing</p>
+		<div class="footer__links">
+			<a href="https://linkedin.com/in/raquel-frassing" class="footer__links__navegacao">LinkedIn</a>
+			<a href="https://github.com/frassing" class="footer__links__navegacao">GitHub</a>
+		</div>
+	</footer>
+
+	<script src="./main.js"></script>
+</body>
+</html>
