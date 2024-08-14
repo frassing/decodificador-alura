@@ -190,3 +190,35 @@ body {
 	background-color: var(--cor-terciaria);
 	transition: all .3s;
 }
+
+@media (max-width: 1200px) {
+	.decodificador {
+		flex-direction: column;
+		align-items: center;
+		gap: 4rem;
+	}
+	
+	.decodificador__entrada, .decodificador__saida {
+		width: 85%;
+	}
+
+	.decodificador__entrada {
+		padding-left: 0;
+	}
+	
+	.decodificador__saida__img {
+		display: none;
+	}
+}
+
+@media (max-width: 600px) {
+	.decodificador__entrada, .decodificador__saida {
+        width: 95%;
+    }
+
+	.decodificador__entrada__botoes  {
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-content: center;
+	}
+}
